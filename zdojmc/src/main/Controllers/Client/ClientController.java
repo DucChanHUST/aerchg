@@ -1,4 +1,4 @@
-package javazdojmc.Controllers.Client;
+package main.Controllers.Client;
 
 public class ClientController {
 }

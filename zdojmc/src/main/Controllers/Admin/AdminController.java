@@ -1,4 +1,4 @@
-package javazdojmc.Controllers.Admin;
+package main.Controllers.Admin;
 
 public class AdminController {
 }

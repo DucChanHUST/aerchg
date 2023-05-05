@@ -1,4 +1,17 @@
-package javazdojmc.Controllers;
+package main.Controllers;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class LoginController {
+
+    public ChoiceBox acc_selector;
+    public Label payee_address_llb;
+    public TextField payee_address_fid;
+    public TextField password_fid;
+    public Button login_button;
+    public Label error_lbl;
 }
