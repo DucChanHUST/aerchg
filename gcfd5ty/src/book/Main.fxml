@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="book.MainController">
+   <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <left>
+         <HBox prefHeight="400.0" prefWidth="243.0" BorderPane.alignment="CENTER">
+            <VBox prefHeight="274.0" prefWidth="243.0">
+               <HBox alignment="CENTER" prefHeight="46.0" prefWidth="243.0">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="70.0" text="ID" textAlignment="CENTER" />
+                  <TextField fx:id="tfID" prefHeight="32.0" prefWidth="152.0" />
+               </HBox>
+               <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="243.0">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="70.0" text="Title" textAlignment="CENTER" />
+                  <TextField fx:id="tfTitle" prefHeight="32.0" prefWidth="152.0" />
+               </HBox>
+               <HBox alignment="CENTER" layoutX="10.0" layoutY="56.0" prefHeight="46.0" prefWidth="243.0">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="70.0" text="Author" textAlignment="CENTER" />
+                  <TextField fx:id="tfAuthor" prefHeight="32.0" prefWidth="152.0" />
+               </HBox>
+               <HBox alignment="CENTER" layoutX="10.0" layoutY="103.0" prefHeight="46.0" prefWidth="243.0">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="70.0" text="Year" textAlignment="CENTER" />
+                  <TextField fx:id="tfYear" prefHeight="32.0" prefWidth="152.0" />
+               </HBox>
+               <HBox alignment="CENTER" layoutX="10.0" layoutY="149.0" prefHeight="46.0" prefWidth="243.0">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="70.0" text="Pages" textAlignment="CENTER" />
+                  <TextField fx:id="tfPages" prefHeight="32.0" prefWidth="152.0" />
+               </HBox>
+               <HBox alignment="BOTTOM_CENTER" prefHeight="53.0" prefWidth="243.0">
+                  <Button fx:id="btnInsert" mnemonicParsing="false" onAction="#MainController" prefHeight="32.0" prefWidth="90.0" text="Insert" />
+                  <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#MainController" prefHeight="32.0" prefWidth="90.0" text="Update" />
+               </HBox>
+               <HBox alignment="CENTER" layoutX="10.0" layoutY="242.0" prefHeight="51.0" prefWidth="243.0">
+                  <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#MainController" prefHeight="32.0" prefWidth="90.0" text="Delete" />
+               </HBox>
+            </VBox>
+         </HBox>
+      </left>
+      <center>
+         <VBox prefHeight="400.0" prefWidth="384.0" BorderPane.alignment="CENTER">
+            <TableView fx:id="tvBook" prefHeight="325.0" prefWidth="377.0">
+               <columns>
+                  <TableColumn fx:id="tvID" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="tvTitle" prefWidth="75.0" text="Title" />
+                  <TableColumn fx:id="tvAuthor" prefWidth="75.0" text="Author" />
+                  <TableColumn fx:id="tvYear" prefWidth="75.0" text="Year" />
+                  <TableColumn fx:id="tvPages" prefWidth="75.0" text="Pages" />
+               </columns>
+            </TableView>
+         </VBox>
+      </center>
+      <right>
+         <VBox prefHeight="400.0" prefWidth="40.0" BorderPane.alignment="CENTER" />
+      </right>
+      <top>
+         <VBox prefHeight="23.0" prefWidth="660.0" BorderPane.alignment="CENTER" />
+      </top>
+   </BorderPane>
+</AnchorPane>
