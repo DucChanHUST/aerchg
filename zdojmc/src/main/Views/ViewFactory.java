@@ -1,4 +1,4 @@
-package javazdojmc.Views;
+package main.Views;
 
 public class ViewFactory {
 }
