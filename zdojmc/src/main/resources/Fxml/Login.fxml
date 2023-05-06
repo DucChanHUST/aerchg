@@ -27,7 +27,7 @@
             <TextField fx:id="payee_address_fid" styleClass="input_field" />
             <Label layoutX="10.0" layoutY="64.0" text="Password:" />
             <TextField fx:id="password_fid" layoutX="10.0" layoutY="87.0" styleClass="input_field" />
-            <Button fx:id="login_button" mnemonicParsing="false" text="Button" />
+            <Button fx:id="login_btn" mnemonicParsing="false" text="Login" />
             <Label fx:id="error_lbl" styleClass="error_lbl" text="Error" />
          </VBox>
       </center>

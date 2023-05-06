@@ -5,10 +5,10 @@
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml">
     <left>
-        <fx:include source="/main/resources/Fxml/Client/ClientMenu.fxml"/>;
+        <fx:include source="/main/resources/Fxml/Client/ClientMenu.fxml"/>
     </left>
     <center>
-        <fx:include source="/main/resources/Fxml/Client/Dashboard.fxml"/>;
+        <fx:include source="/main/resources/Fxml/Client/Dashboard.fxml"/>
     </center>
 
 </BorderPane>

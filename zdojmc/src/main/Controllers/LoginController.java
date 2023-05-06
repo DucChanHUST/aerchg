@@ -16,11 +16,11 @@ public class LoginController implements Initializable {
     public Label payee_address_llb;
     public TextField payee_address_fid;
     public TextField password_fid;
-    public Button login_button;
+    public Button login_btn;
     public Label error_lbl;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        login_button.setOnAction(event -> Model.getInstance().getViewFactory().showClientWindow());
+        login_btn.setOnAction(event -> Model.getInstance().getViewFactory().showClientWindow());
     }
 }
