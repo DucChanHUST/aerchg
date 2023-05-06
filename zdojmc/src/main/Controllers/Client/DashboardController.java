@@ -19,8 +19,8 @@ public class DashboardController implements Initializable {
     public ListView transaction_listview;
     public TextField payee_fld;
     public TextField amount_fld;
-    public TextArea messange_fld;
     public Button send_money_btn;
+    public TextArea messange_fld;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
