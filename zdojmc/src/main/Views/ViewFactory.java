@@ -1,5 +1,7 @@
 package main.Views;
 
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
@@ -8,10 +10,18 @@ import main.Controllers.Client.ClientController;
 
 public class ViewFactory {
 //    Client views
+    private final StringProperty clientSelectedMenuItem;
     private AnchorPane dashboardView;
     private AnchorPane transactionsView;
 
-    public ViewFactory(){}
+    public ViewFactory(){
+        this.clientSelectedMenuItem = new SimpleStringProperty("");
+    }
+
+    public StringProperty getClientSelectedMenuItem() {
+        return clientSelectedMenuItem;
+    }
+
 
     public AnchorPane getDashboardView() {
         if (dashboardView == null) {
@@ -27,7 +37,7 @@ public class ViewFactory {
     public AnchorPane getTransactionsView() {
         if (transactionsView == null) {
             try {
-                transactionsView = new FXMLLoader(getClass().getResource("/main/resources/Fxml/Client/Transactions")).load();
+                transactionsView = new FXMLLoader(getClass().getResource("/main/resources/Fxml/Client/Transactions.fxml")).load();
             } catch (Exception e) {
                 e.printStackTrace();
             }
