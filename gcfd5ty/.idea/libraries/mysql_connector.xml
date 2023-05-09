@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="mysql-connector">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/book/mysql-connector.jar!/" />
+      <root url="file://$JavaFX20$" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$JavaFX20$" recursive="false" />
   </library>
 </component>
