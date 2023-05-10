@@ -4,7 +4,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import main.Models.Model;
 import main.Views.AdminMenuOptions;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 

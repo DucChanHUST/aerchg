@@ -1,0 +1,24 @@
+.container {
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 1;
+    -fx-border-color: #dcdde1;
+    -fx-padding: 20;
+    -fx-spacing: 30;
+}
+
+.container Button {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #192a56;
+}
+
+.container Button:hover {
+    -fx-cursor: hand;
+}
+
+.text_left {
+    -fx-font-size: 1.5em;
+}
+.text_right {
+    -fx-font-size: 1.2em;
+    -fx-spacing: 5;
+}
