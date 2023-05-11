@@ -1,9 +1,9 @@
 package Views;
 
+import Controllers.GUI11Controller;
 import Models.Model;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 public class ViewFactory {
@@ -12,15 +12,11 @@ public class ViewFactory {
         createStage(loader);
     }
 
-    public void showGUI12() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/resources/Fxml/GUI12.fxml"));
+    public void showGUI21() {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/resources/Fxml/GUI21.fxml"));
         createStage(loader);
     }
 
-//    public void showGUI21() {
-//        FXMLLoader loader = new FXMLLoader(getClass().getResource("/resources/Fxml/GUI21.fxml"));
-//        createStage(loader);
-//    }
     public void createStage(FXMLLoader loader) {
         Scene scene = null;
         try {

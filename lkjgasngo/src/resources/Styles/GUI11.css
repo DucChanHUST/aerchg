@@ -63,3 +63,7 @@
     -fx-padding: 0 0 10 0;
     -fx-opacity: 1;
 }
+
+.menu-item {
+    -fx-font-size: 1.1em;
+}

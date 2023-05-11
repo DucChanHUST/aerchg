@@ -37,56 +37,36 @@
     -fx-font-size: 1.2em;
 }
 
-.container2 {
-    -fx-border-width: 1;
-    -fx-border-color: #dcdde1;
-    -fx-padding: 20 30 10 30;
-    -fx-spacing: 15;
-}
-
-.container2 Button {
-    -fx-background-color: #273c75;
-    -fx-text-fill: #FFFFFF;
-    -fx-font-size: 1.2em;
-    -fx-background-radius: 5;
-}
-
-.container2 Button:hover {
-    -fx-cursor: hand;
-}
-
-.container2 Label:hover {
-    -fx-cursor: hand;
-}
-
-.check-box:selected .mark {
-    -fx-background-color: #f5f6fa;
-}
-
-.check-box:selected .box {
-    -fx-background-color: #273c75;
-}
-.section Label {
-    -fx-padding: 10 20 10 20;
-    -fx-spacing: 30;
-    -fx-font-size: 1.3em;
-    -fx-text-fill: #273c75;
-    -fx-border-width: 0 0 1 0;
-    -fx-border-color: #dcdde1;
-}
-
-.section Region {
-    -fx-border-width: 0 0 1 0;
-    -fx-border-color: #dcdde1;
-}
-
-.section_selected {
-    -fx-border-width: 1 1 0 1;
-    -fx-text-fill: #2f3640;
-}
-
 .questionBank {
     -fx-font-size: 2em;
     -fx-text-fill: #c23616;
+}
+
+.tab {
+    -fx-padding: 5 20 5 20;
+    -fx-background-color: #FFFFFF;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #40739e;
+    -fx-font-size: 1.3em;
+}
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: black;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #FFFFFF;
+}
+
+.tab-pane .tab {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: E8E8E8;
+}
+.tab-pane .tab:selected {
+    -fx-border-width: 1 1 0 1;
+    -fx-border-color: E8E8E8;
 }
 
