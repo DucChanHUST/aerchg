@@ -1,0 +1,24 @@
+.transaction_cell_container {
+    -fx-spacing: 10;
+    -fx-effect: dropshadow(three-pass-box, #DDDDDD, 3, 0, 0, 3);
+}
+
+.date_lbl {
+    -fx-font-size: 1.3em;
+    -fx-font-family: "Calibri Light";
+}
+
+.name_lbl {
+    -fx-font-size: 1.4em;
+    -fx-font-family: "Calibri";
+    -fx-font-weight: bold;
+}
+
+.amount_lbl {
+    -fx-background-color: #192a56;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 5;
+    -fx-font-size: 1.2em;
+    -fx-font-family: "Calibri";
+    -fx-font-weight: bold;
+}

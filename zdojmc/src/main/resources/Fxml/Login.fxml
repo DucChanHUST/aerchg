@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<?import javafx.scene.control.PasswordField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../Styles/Login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.LoginController">
+   <BorderPane layoutX="186.0" layoutY="118.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <left>
+         <VBox prefHeight="200.0" prefWidth="200.0" styleClass="login_logo_container" BorderPane.alignment="CENTER">
+            <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="200.0">
+               <SVGPath content="M274.9 34.3c-28.1-28.1-73.7-28.1-101.8 0L34.3 173.1c-28.1 28.1-28.1 73.7 0 101.8L173.1 413.7c28.1 28.1 73.7 28.1 101.8 0L413.7 274.9c28.1-28.1 28.1-73.7 0-101.8L274.9 34.3zM200 224a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM96 200a24 24 0 1 1 0 48 24 24 0 1 1 0-48zM224 376a24 24 0 1 1 0-48 24 24 0 1 1 0 48zM352 200a24 24 0 1 1 0 48 24 24 0 1 1 0-48zM224 120a24 24 0 1 1 0-48 24 24 0 1 1 0 48zm96 328c0 35.3 28.7 64 64 64H576c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H461.7c11.6 36 3.1 77-25.4 105.5L320 413.8V448zM480 328a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" fill="WHITE" scaleX="0.1" scaleY="0.1" />
+            </VBox>
+            <Label prefHeight="40.0" prefWidth="139.0" text="Pocari" />
+         </VBox>
+      </left>
+      <center>
+         <VBox prefHeight="200.0" prefWidth="100.0" styleClass="login_form_container" BorderPane.alignment="CENTER">
+            <Label id="choice-prompt-text" text="Choose Your Account Type" />
+            <ChoiceBox fx:id="acc_selector" prefWidth="150.0" styleClass="account_selector" />
+            <Label fx:id="payee_address_llb" text="Payee Address:" />
+            <TextField fx:id="payee_address_fid" styleClass="input_field" />
+            <Label layoutX="10.0" layoutY="64.0" text="Password:" />
+            <PasswordField fx:id="password_fid" layoutX="10.0" layoutY="87.0" styleClass="input_field" />
+            <Button fx:id="login_btn" mnemonicParsing="false" text="Login" />
+            <Label fx:id="error_lbl" styleClass="error_lbl" text="Error" />
+         </VBox>
+      </center>
+   </BorderPane>
+</AnchorPane>

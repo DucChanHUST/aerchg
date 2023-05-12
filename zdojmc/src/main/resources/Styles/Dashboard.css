@@ -1,0 +1,144 @@
+.dashboard {
+    -fx-background-color: #EEEEEE;
+}
+
+.user_name {
+    -fx-font-size: 2.6em;
+    -fx-font-family: "Calibri Light";
+}
+
+.date_lbl {
+    -fx-text-fill: #AAAAAA;
+    -fx-font-size: 1.1em;
+    -fx-font-family: "Calibri Light";
+}
+
+.section_title {
+    -fx-font-size: 1.2em;
+    -fx-font-family: "Calibri";
+}
+
+/*Accounts View*/
+.accounts_view {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20 0 0 10;;
+    -fx-padding: 10 0 15 0;
+    -fx-alignment: center;
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: #DDDDDD;
+    -fx-spacing: 15;
+}
+
+.account {
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 10, 0, 3, 5);
+}
+
+.account HBox {
+    -fx-background-color: #FFFFFF;
+}
+
+.account Text {
+    -fx-fill: #FFFFFF;
+    -fx-font-size: 1.2em;
+}
+
+.account SVGPath {
+    -fx-fill: #FFFFFF;
+}
+
+.account_gradient {
+    -fx-background-color: linear-gradient(to bottom right, #487eb0, #353b48);
+}
+
+.account_balance {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 2.1em;
+    -fx-font-weight: bold;
+}
+
+.account_number {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1.5em;
+    -fx-text-alignment: center;
+}
+
+/* Account summary view*/
+.summary_view {
+    -fx-background-color: #FFFFFF;
+    -fx-padding: 5 10 5 10;
+    -fx-spacing: 5;
+    -fx-alignment: center;
+}
+
+.acc_summary_container {
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-alignment: center_left;
+    -fx-border-radius: 10;
+    -fx-border-color: #192a56;
+    -fx-border-width: 1;
+    -fx-border-style: dashed;
+}
+
+.acc_summary_view Text {
+    -fx-stroke: #192a56;
+}
+
+.income_amount {
+    -fx-text-fill: #44bd32;
+    -fx-font-size: 1.5em;
+}
+
+.expense_amount {
+    -fx-text-fill: #c23616;
+    -fx-font-size: 1.5em;
+}
+
+/*Transaction view*/
+.transaction_listview {
+    -fx-background-color: #EEEEEE;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-color: #AAAAAA;
+}
+
+.transaction_listview .scroll-bar:vertical {
+    -fx-scale-x: 0;
+}
+
+.list-cell {
+    -fx-background-color: #EEEEEE;
+    -fx-padding: 15 0 15 0;
+}
+
+/*Send money view*/
+.new_trans_container {
+    -fx-background-color: #EEEEEE;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-alignment: center_left;
+}
+
+.new_trans_container Label {
+    -fx-font-size: 1em;
+}
+
+.new_trans_container TextField {
+    -fx-pref-height: 40;
+    -fx-background-color: #FFFFFF;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+}
+
+.new_trans_container Button {
+    -fx-background-color: linear-gradient(to bottom right, #273c75, #192a56);
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+    -fx-pref-width: 230;
+    -fx-font-size: 1.4em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF;
+}
+
+.new_trans_container Button:hover {
+    -fx-cursor: hand;
+}
+
