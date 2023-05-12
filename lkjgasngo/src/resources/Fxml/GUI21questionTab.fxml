@@ -9,16 +9,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="440.0" prefWidth="840.0" styleClass="container2" stylesheets="@../Styles/GUI21questionTab.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="440.0" prefWidth="840.0" styleClass="container2" stylesheets="@../Styles/GUI21questionTab.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GUI21questionTabController">
 
       <Label styleClass="questionBank" text="Question Bank" />
     <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="778.0">
         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Select a category: ">
             <HBox.margin>
-                <Insets right="10.0"/>
+                <Insets right="10.0" />
             </HBox.margin>
         </Text>
-        <ChoiceBox prefHeight="32.0" prefWidth="238.0"/>
+        <ChoiceBox fx:id="choiceBox" prefHeight="32.0" prefWidth="238.0" />
     </HBox>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The default category for questions shared incontext" />
       <CheckBox mnemonicParsing="false" text="Also show questions from subcategories" />

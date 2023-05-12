@@ -21,8 +21,8 @@
 .check-box:selected .box {
     -fx-background-color: #273c75;
 }
+
 .questionBank {
     -fx-font-size: 2em;
     -fx-text-fill: #c23616;
 }
-

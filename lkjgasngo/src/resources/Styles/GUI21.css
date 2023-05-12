@@ -70,3 +70,7 @@
     -fx-border-color: E8E8E8;
 }
 
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}
+
