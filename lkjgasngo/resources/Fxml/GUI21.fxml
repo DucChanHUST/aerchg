@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
@@ -12,7 +11,7 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #FFFFFF;" styleClass="background" stylesheets="@../Styles/GUI21.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GUI21Controller">
+<AnchorPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../Styles/GUI21.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GUI21Controller">
     <HBox prefHeight="60.0" prefWidth="900.0" styleClass="tab_bar" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="40.0">
             <HBox.margin>
@@ -69,32 +68,26 @@
             <Label layoutX="77.0" layoutY="10.0" text="THI CUỐI KÌ" textFill="#c23616" />
         </HBox>
     </VBox>
-   <VBox layoutX="30.0" layoutY="245.0" prefHeight="414.0" prefWidth="840.0" styleClass="container2" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="240.0">
-      <children>
-         <HBox prefHeight="25.0" prefWidth="778.0" styleClass="section">
-            <children>
-               <Label styleClass="section_selected" text="Question" />
-               <Label layoutX="10.0" layoutY="10.0" text="Categories" />
-               <Label layoutX="51.0" layoutY="10.0" text="Import" />
-               <Label layoutX="92.0" layoutY="10.0" text="Export" />
-               <Region prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
-            </children>
-         </HBox>
-         <Label styleClass="questionBank" text="Question Bank" />
-         <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="778.0">
-            <children>
-               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Select a category: ">
-                  <HBox.margin>
-                     <Insets right="10.0" />
-                  </HBox.margin>
-               </Text>
-               <ChoiceBox prefHeight="32.0" prefWidth="238.0" />
-            </children>
-         </HBox>
-         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="The default category for questions shared incontext" />
-         <CheckBox mnemonicParsing="false" text="Also show questions from subcategories" />
-         <CheckBox layoutX="41.0" layoutY="322.0" mnemonicParsing="false" text="Also show old questions" />
-         <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="262.0" text="CREATE A NEW QUESTION ..." />
-      </children>
-   </VBox>
+    <TabPane layoutX="31.0" layoutY="234.0" prefHeight="440.0" prefWidth="840.0" styleClass="container1"
+             tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="30.0"
+             AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="234.0">
+        <Tab text="Questions">
+            <fx:include source="GUI21questionTab.fxml"/>
+        </Tab>
+        <Tab text="Categories">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+        <Tab text="Import">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+        <Tab text="Export">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+        <Tab closable="false">
+            <graphic>
+                <Region prefHeight="26.0" prefWidth="274.0"/>
+            </graphic>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+        </Tab>
+    </TabPane>
 </AnchorPane>
